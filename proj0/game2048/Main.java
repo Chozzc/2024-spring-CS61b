@@ -5,7 +5,7 @@ import java.util.Random;
 import ucb.util.CommandArgs;
 
 /** The main class for the 2048 game.
- *  @author P. N. Hilfinger
+ *  @author P. N. Hilfinger czc
  */
 public class Main {
 
@@ -50,8 +50,8 @@ public class Main {
             while (game.playing()) {
                 game.playGame();
             }
-        } catch (IllegalStateException excp) {
-            System.err.printf("Internal error: %s%n", excp.getMessage());
+        } catch (IllegalStateException except) {
+            System.err.printf("Internal error: %s%n", except.getMessage());
             System.exit(1);
         }
 
@@ -59,4 +59,3 @@ public class Main {
     }
 
 }
-# 2048项目
